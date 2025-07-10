@@ -1,0 +1,19 @@
+acqs_models:
+  - "random dirichlet1000"
+  - "dirichletvar dirichlet1000"
+  - "dirichletvar dirichlet1000"
+  - "dirichletvarprop dirichlet1000"
+  - "dirichletvarprop dirichlet1000"
+  - "unc laplace"
+  - "uncnorm rwll1000"
+  - "vopt dirichlet1000"
+  - "sopt dirichlet1000"
+  - "mcvopt dirichlet1000"
+  
+  
+
+acc_models:
+  - "dirichlet1000"
+  
+
+seeds: [2, 3]
