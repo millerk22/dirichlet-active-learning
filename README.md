@@ -1,10 +1,14 @@
 # Dirichlet Active Learning 
 
-This repository contains the code to reproduce the numerical experiments from our paper, Dirichlet Active Learning (see [arXiv link](https://arxiv.org/abs/2311.05501)) by Kevin Miller and Ryan Murray. 
+This repository contains the code to reproduce the numerical experiments from our paper, Dirichlet Active Learning (see [arXiv link](https://arxiv.org/abs/2311.05501)) by Kevin Miller and Ryan Murray. Currently under review at the Journal of Machine Learning Research (JMLR).
+
+We introduce a novel graph-based semi-supervised classification method called Dirichlet Learning that models the predictive distribution over a pool of inputs via a Dirichlet random field. A key insight of our method is to model observation of a class label at an individual point as lending "pseudo-label" at other nearby (or similar) inputs. Thus, as information is gained about the classification of a subset of inputs represented in the Dirichlet random field, we can update belief about the classification of the unlabeled inputs in the pool. 
+
+Active learning over this semi-supervised classification model is then straightforwardly performed using the variance of the individual Dirichlet random variables in the field. Combining this variance-based acqusition function and the underlying Dirichlet Learning semi-supervised classifier yields our method we call __DiAL (Dirichlet Activ Learning)__.
 
 ## Requirements
 
-See the ``requirements.txt`` file for a list of Python packages (and versions) of some needed packages to run this repository.
+See the ``requirements.txt`` file for a list of Python packages (and versions) of some needed packages to run this repository, including the [GraphLearning package](https://github.com/jwcalder/GraphLearning).
 
 ## Running Experiments
 
